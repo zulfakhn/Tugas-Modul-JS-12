@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const gradeA = 90;
+        const gradeB = 80;
+        const gradeC = 70;
+        const gradeD = 60;
+
+        function konversiSkorKeGrade(skor) {
+            if (skor >= gradeA) {
+              return "A";
+            } else if (skor >= gradeB) {
+                return "B";
+            } else if (skor >= gradeC ) {
+                return "C";
+            } else if (skor >= gradeD) {
+                return "D";
+            } else if (skor < gradeD) {
+                return "E";
+            }
+        }
+        console.log(konversiSkorKeGrade(92));         
+        console.log(konversiSkorKeGrade(85)); 
+        console.log(konversiSkorKeGrade(75));
+        console.log(konversiSkorKeGrade(65));
+        console.log(konversiSkorKeGrade(55));
+    </script>
+</body>
+</html>
