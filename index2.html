@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const gradeA = 90;
+        const gradeB = 80;
+        const gradeC = 70;
+        const gradeD = 60;
+        function konversiSkorKeGrade(skorArray) {
+        let gradeArray = [];
+            for (let skor of skorArray) {
+                if (skor >= gradeA) {
+                    gradeArray.push("A");
+                } else if (skor >= gradeB) {
+                    gradeArray.push("B");
+                } else if (skor >= gradeC ) {
+                    gradeArray.push("C");
+                } else if (skor >= gradeD) {
+                    gradeArray.push("D");
+                } else if (skor < gradeD) {
+                    gradeArray.push("E");
+                }
+            }
+            return gradeArray;
+        }
+        console.log(konversiSkorKeGrade([95, 87, 78, 69, 51]));  
+    </script>
+</body>
+</html>
